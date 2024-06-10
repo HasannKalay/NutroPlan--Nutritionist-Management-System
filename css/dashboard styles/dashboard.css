@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    display: flex;
+}
+
+#sidebar-wrapper {
+    width: 250px;
+    height: 100vh;
+    background-color: #35424a;
+    position: fixed;
+}
+
+.sidebar-heading {
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: #35424a;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-heading .logo {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.list-group-item {
+    border: none;
+    padding: 15px 20px;
+    background-color: #35424a;
+    color: white;
+}
+
+.list-group-item i {
+    margin-right: 10px;
+}
+
+#page-content-wrapper {
+    flex: 1;
+    padding-left: 250px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #35424a;
+    color: white;
+}
+
+.card .card-title {
+    color: white;
+}
+
+.card .fa-2x {
+    color: #e8491d;
+}

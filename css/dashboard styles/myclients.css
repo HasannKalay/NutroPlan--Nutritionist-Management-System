@@ -1,0 +1,39 @@
+/* myclients.css */
+
+.card {
+    background-color: white;  /* Kartların arka plan rengi beyaz */
+    color: #35424a;  /* Kartların metin rengi */
+    transition: none;
+}
+
+.card .card-title {
+    color: #35424a;  /* Kart başlıkları için metin rengi */
+}
+
+.card .fa-2x {
+    color: #e8491d;  /* Kartlardaki ikonların rengi */
+}
+
+#add-new-client {
+    background-color: #e8491d;
+    border-color: #e8491d;
+}
+
+#search-bar {
+    border-color: #35424a;
+}
+
+#search-bar:focus {
+    box-shadow: none;
+    border-color: #35424a;
+}
+
+.input-group-append .btn {
+    background-color: #35424a;
+    border-color: #35424a;
+}
+
+.input-group-append .btn:hover {
+    background-color: #e8491d;
+    border-color: #e8491d;
+}

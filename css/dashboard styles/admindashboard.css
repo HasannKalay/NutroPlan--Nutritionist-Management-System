@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    display: flex;
+    transition: all 0.3s;
+}
+
+#sidebar-wrapper {
+    width: 250px;
+    height: 100vh;
+    background-color: #35424a;  /* Sidebar arka plan rengi */
+    position: fixed;
+    transition: margin-left 0.3s;
+}
+
+#sidebar-wrapper.toggled {
+    margin-left: -250px;
+}
+
+.sidebar-heading {
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: #35424a;  /* NutroPlan yazısının arka plan rengi */
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-heading .logo {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.list-group-item {
+    border: none;
+    padding: 15px 20px;
+    background-color: #35424a;  /* List item arka plan rengi */
+    color: white;  /* List item yazı rengi */
+}
+
+.list-group-item i {
+    margin-right: 10px;
+}
+
+.list-group-item:hover {
+    background-color: #e8491d;
+    color: white;
+}
+
+#page-content-wrapper {
+    flex: 1;
+    padding-left: 250px;
+    transition: padding-left 0.3s;
+}
+
+#page-content-wrapper.toggled {
+    padding-left: 0;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #35424a;  /* Kartların arka plan rengi */
+    color: white;  /* Kartların metin rengi */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.card .card-title {
+    color: white;  /* Kart başlıkları için metin rengi */
+    transition: color 0.3s;
+}
+
+.card .fa-2x {
+    color: #e8491d;  /* Kartlardaki ikonların rengi */
+    transition: color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: white;  /* Hoverlandığında arka plan rengi beyaz olsun */
+    color: #35424a;  /* Hoverlandığında metin rengi değişikliği */
+}
+
+.card:hover .card-title {
+    color: #35424a;  /* Hoverlandığında başlık renginin değişikliği */
+}
+
+.card:hover .fa-2x {
+    color: #35424a;  /* Hoverlandığında ikon rengi değişikliği */
+}
+
+#menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+#menu-toggle:focus {
+    outline: none;
+}
+
+#menu-toggle .bar1, #menu-toggle .bar2, #menu-toggle .bar3 {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+#menu-toggle .bar1 {
+    transform: translateY(-2px);
+}
+
+#menu-toggle .bar3 {
+    transform: translateY(2px);
+}
+
+
